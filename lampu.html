@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="
+    "
+    >
+      <h2>What Can JavaScript Do?</h2>
+
+      <p>JavaScript can change HTML attribute values.</p>
+
+      <p>
+        In this case JavaScript changes the value of the src (source) attribute
+        of an image.
+      </p>
+
+      <button onclick="document.getElementById('myImage').src=`on.png`">
+        Turn on the light
+      </button>
+
+      <img id="myImage" src="off.png" />
+
+      <button onclick="document.getElementById('myImage').src=`off.png`">
+        Turn off the light
+      </button>
+    </div>
+  </body>
+</html>

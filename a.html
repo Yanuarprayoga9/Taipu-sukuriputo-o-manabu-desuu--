@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="satu" />
+      <p>x</p>
+      <input type="text" id="dua" />
+      <button onclick="tambah()">tambah</button>
+    </div>
+
+    <p id="paragraf">hasil</p>
+    <script>
+      function tambah() {
+        const container = document.querySelector(".container");
+        const satu = parseInt(document.querySelector("#satu").value);
+        const dua = parseInt(document.querySelector("#dua").value);
+        console.log(satu,dua)
+        const hasil = satu + dua;
+        const p = (document.getElementById("paragraf").innerText += hasil);
+      }
+    </script>
+  </body>
+</html>
